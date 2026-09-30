@@ -1,0 +1,8 @@
+{
+  "name": "Remix B9 Jiu Jitsu Pompeia",
+  "description": "Plataforma oficial da academia B9 Jiu Jitsu Pompeia com grade de horários, matriz de posições e técnicas, videoaulas por faixa, cronômetro de sparring e matrícula online.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-tint: #e9c349;
+  --color-primary-fixed-dim: #e9c349;
+  --color-surface-container-highest: #38342b;
+  --color-surface: #16130b;
+  --color-tertiary-fixed: #dbe1ff;
+  --color-on-secondary-fixed: #1b1b1c;
+  --color-secondary-fixed: #e5e2e1;
+  --color-on-tertiary-fixed: #00174b;
+  --color-on-primary-container: #554300;
+  --color-on-primary-fixed: #241a00;
+  --color-on-error-container: #ffdad6;
+  --color-tertiary: #bfcdff;
+  --color-on-surface: #eae1d4;
+  --color-on-background: #eae1d4;
+  --color-on-tertiary-fixed-variant: #27438a;
+  --color-surface-container-low: #1f1b13;
+  --color-primary-fixed: #ffe088;
+  --color-on-secondary-container: #b7b5b4;
+  --color-surface-bright: #3d392f;
+  --color-on-primary: #3c2f00;
+  --color-surface-container-high: #2d2a21;
+  --color-error: #ffb4ab;
+  --color-secondary-fixed-dim: #c8c6c5;
+  --color-inverse-primary: #735c00;
+  --color-on-secondary: #303030;
+  --color-primary: #f2ca50;
+  --color-secondary: #c8c6c5;
+  --color-error-container: #93000a;
+  --color-on-tertiary-container: #254188;
+  --color-inverse-on-surface: #343027;
+  --color-background: #16130b;
+  --color-outline-variant: #4d4635;
+  --color-surface-container-lowest: #110e07;
+  --color-on-secondary-fixed-variant: #474746;
+  --color-inverse-surface: #eae1d4;
+  --color-secondary-container: #474746;
+  --color-tertiary-fixed-dim: #b4c5ff;
+  --color-surface-dim: #16130b;
+  --color-on-tertiary: #082b72;
+  --color-on-error: #690005;
+  --color-on-primary-fixed-variant: #574500;
+  --color-outline: #99907c;
+  --color-tertiary-container: #97b0ff;
+  --color-primary-container: #d4af37;
+  --color-surface-container: #231f17;
+  --color-on-surface-variant: #d0c5af;
+  --color-surface-variant: #38342b;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-margin: 2rem;
+
+  --font-display: "Lexend", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #16130b;
+    color: #eae1d4;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Custom typography classes matching the HTML design system */
+.font-headline-xl, .text-headline-xl {
+  font-family: "Lexend", sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .font-headline-xl, .text-headline-xl {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+.font-headline-lg, .text-headline-lg {
+  font-family: "Lexend", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .font-headline-lg, .text-headline-lg {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.font-headline-md, .text-headline-md {
+  font-family: "Lexend", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.font-headline-sm, .text-headline-sm {
+  font-family: "Lexend", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.font-body-lg, .text-body-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md, .text-body-md {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm, .text-body-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.font-label-lg, .text-label-lg {
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.font-label-md, .text-label-md {
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.font-label-sm, .text-label-sm {
+  font-family: "Lexend", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.material-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
